@@ -1,0 +1,94 @@
+# Notebook+ Professional
+
+**Notebook+** is a modern desktop text editor built with Java and C. It is designed to provide a clean interface and useful tools for everyday text editing.
+
+## Features
+
+- Modern desktop interface
+- Multiple document tabs
+- Open, save and create text files
+- Undo and redo
+- Find and replace
+- Dark and light themes
+- Adjustable font size
+- Word wrap
+- Line numbers
+- Text statistics using a C engine
+- File information
+- UTF-8 support
+
+## Requirements
+
+- Windows 10 or Windows 11
+- Java JDK 17 or newer
+- GCC compiler
+
+## Project files
+
+```text
+NotebookPlus/
+├── NotebookPlus.java
+└── notebook_engine.c
+```
+
+## Installation
+
+### 1. Download the project
+
+Download the ZIP archive from the GitHub repository:
+
+1. Open the repository.
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
+4. Extract the ZIP archive to a folder.
+
+### 2. Compile the C engine
+
+Open PowerShell in the project folder and run:
+
+```powershell
+gcc notebook_engine.c -O2 -o notebook_engine.exe
+```
+
+### 3. Compile the Java application
+
+Run:
+
+```powershell
+javac -encoding UTF-8 NotebookPlus.java
+```
+
+### 4. Launch Notebook+
+
+Run:
+
+```powershell
+java NotebookPlus
+```
+
+The application should now open.
+
+## Downloading the project as ZIP
+
+You can download the complete source code without using Git:
+
+1. Open the GitHub repository.
+2. Click **Code**.
+3. Click **Download ZIP**.
+4. Extract the downloaded archive.
+5. Follow the installation instructions above.
+
+## Technologies
+
+- Java – desktop interface and application logic
+- C – native text processing engine
+- Swing – graphical user interface
+- GCC – C compiler
+
+## License
+
+Choose a license for your project before publishing it. For example, you can use the MIT License.
+
+---
+
+**Notebook+ Professional – A simple and powerful text editor.**
